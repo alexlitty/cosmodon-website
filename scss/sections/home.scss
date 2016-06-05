@@ -1,0 +1,122 @@
+section.home {
+    .banner {
+        background-color: #000;
+
+        .content {
+            clear: both;
+            width: 80%;
+
+            margin: 0 auto;
+            padding: 32px;
+
+            .info {
+                float: right;
+                margin-top: 110px;
+
+                text-align: right;
+                color: #efefef;
+
+                .button {
+                    transition-duration: .2s;
+                    display: inline-block;
+                    border-radius: 5px;
+                    
+                    padding: 8px 12px;
+                    margin: 8px;
+
+                    background-color: #AB1BB3;
+
+                    font-weight: bold;
+                    color: #efefef;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: #D223DB;
+                    }
+                }
+            }
+        }
+    }
+
+    .roadmap {
+        clear: both;
+
+        h1 {
+            margin-bottom: 14px;
+        }
+
+        .feature {
+            display: inline-block;
+            float: left;
+            margin-right: 16px;
+
+            border-width: 1px;
+            border-style: solid;
+
+            header {
+                border-width: 0 0 1px 0;
+                border-style: solid;
+
+                padding: 5px 12px;
+
+                font-weight: bold;
+                font-variant: small-caps;
+            }
+
+            ul, li {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            ul {
+                padding: 5px 11px;
+            }
+
+            &.rendering {
+                border-color: #D662FC;
+
+                header {
+                    border-color: #D662FC;
+
+                    color: #0070B5;
+                    background-color: #F0C2FF;
+                }
+
+                ul {
+                }
+
+            }
+
+            &.math {
+                border-color: #FF7878;
+
+                header {
+                    border-color: #FF7878;
+                    background-color: #FFC9C9;
+
+                    color: #CF2929;
+                }
+            }
+
+            li {
+                &:before {
+                    display: inline-block;
+                    width: 16px;
+                    text-align: center;
+                    padding-right: 4px;
+
+                    content: "-";
+                    color: #ccc;
+                }
+
+                &.complete:before {
+                    content: "✓";
+                    color: #3F3;
+                }
+            }
+
+        }
+
+    }
+}

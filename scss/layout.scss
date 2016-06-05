@@ -1,0 +1,38 @@
+// Main site header.
+body > header {
+    clear: both;
+
+    min-width: 1024px;
+    width: 80%;
+
+    margin: 0 auto;
+    padding: 32px;
+
+    // Site navigation.
+    nav {
+        float: right;
+
+        div {
+            display: inline-block;
+            line-height: 23px;
+            font-size: 23px;
+            font-family: 'Montserrat', sans-serif;
+            font-variant: small-caps;
+
+            margin-left: 16px;
+        }
+    }
+}
+
+section > article {
+    min-width: 1024px;
+    width: 80%;
+
+    margin: 36px auto;
+
+    font-family: 'Montserrat', sans-serif;
+
+    h1 {
+        font-size: 36px;
+    }
+}

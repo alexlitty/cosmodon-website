@@ -1,0 +1,127 @@
+<html ng-app="alexlitty">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Cosmodon</title>
+
+        <link rel="stylesheet" href="/styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script src="/site.js"></script>
+  </head>
+
+  <body ng-controller="SiteController as site">
+    <header>
+        <img src="/images/logo.png" />
+
+        <nav>
+            <div ng-click="">Documentation</div>
+            <div>Download</div>
+        </nav>
+    </header>
+
+    <section class="home" ng-show="!site.section">
+
+        <div class="banner">
+            <div class="content">
+                <img src="/images/example.jpg" />
+
+                <div class="info">
+                    <h1>The Astronomical Game Library.</h1>
+                    In Development. <a class="button" href="https://www.github.com/lanyardtextile/cosmodon">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <article>
+            <h1>Simplicity and Power</h1>
+
+            <p>
+                Cosmodon is a video game library built for novice and expert developers alike.
+
+                <br /><br />
+
+                The library is in early development and open for perusal. Check out our <a href="/downloads/">Downloads</a>, <a href="/documentation/">Documentation</a>, and feature roadmap below.
+            </p>
+        </article>
+
+        <article class="roadmap">
+            <div class="feature rendering">
+                <header>Drivers</header>
+
+                <ul>
+                    <li class="complete">OpenGL 4.0</li>
+                    <li class="complete">OpenGL 3.3</li>
+                    <li>Direct3D</li>
+                </ul>
+            </div>
+
+            <div class="feature rendering">
+                <header>Camera</header>
+
+                <ul>
+                    <li class="complete">Field of View</li>
+                    <li class="complete">Clipping distances</li>
+                    <li class="complete">Custom Matrices</li>
+                </ul>
+            </div>
+
+            <div class="feature rendering">
+                <header>Vertices Rendering</header>
+                <ul>
+                    <li class="complete">Points</li>
+                    <li class="complete">Lines</li>
+                    <li class="complete">Triangles</li>
+                    <li>Quads</li>
+                    <li>Consecutive Primitives</li>
+                </ul>
+            </div>
+
+            <div class="feature rendering">
+                <header>Shaders</header>
+
+                <ul>
+                    <li class="complete">Vertex</li>
+                    <li>Tessellation</li>
+                    <li>Geometry</li>
+                    <li class="complete">Fragment</li>
+                    <li>Compute</li>
+                </ul>
+            </div>
+
+            <div class="feature rendering">
+                <header>Mesh File Importing</header>
+
+                <ul>
+                    <li>Vertices</li>
+                    <li>Animations</li>
+                    <li>Textures</li>
+                    <li>Materials</li>
+                </ul>
+            </div>
+
+            <div class="feature math">
+                <header>Math</header>
+
+                <ul>
+                    <li class="complete">Vectors</li>
+                    <li class="complete">Matrices</li>
+                    <li class="complete">Random Generator</li>
+                </ul>
+            </div>
+
+            <div class="feature math">
+                <header>Collisions</header>
+
+                <ul>
+                    <li>Radius</li>
+                    <li>Box</li>
+                </ul>
+            </div>
+
+        </article>
+    </section>
+  </body>
+</html>
