@@ -9,10 +9,19 @@ if (!config.port) {
 var express = require('express');
 var app = express();
 
+// Setup Swig.
+var swig = require('swig');
+app.engine('html', swig.renderFile);
+app.set('view engine', 'html');
+app.set('views', __dirname + '/views');
+
+app.set('view cache', !config.debug);
+swig.setDefaults({ cache: !config.debug });
+
 // Setup express routing.
 app.use('/', express.static(__dirname + '/static'));
 app.get('/', function(req, res) {
-    res.render('static/index.html');
+    res.render('home');
 });
 
 // Start express.

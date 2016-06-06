@@ -1,0 +1,27 @@
+<html ng-app="alexlitty" ng-controller="SiteControler as site">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Cosmodon # {% block title %}{% endblock %}</title>
+
+        <link rel="stylesheet" href="/styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script src="/site.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <img src="/images/logo.png" />
+
+            <nav>
+                <div ng-click="">Documentation</div>
+                <div>Download</div>
+            </nav>
+        </header>
+
+        {% block content %}{% endblock %}
+    </body>
+</html>
