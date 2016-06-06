@@ -1,5 +1,3 @@
-# Cosmodon Website
+# [Cosmodon Website](http://www.cosmodon.com/)
 
-The website for Cosmodon, Astronomical Game Library.
-
-[See it in action.](http://www.cosmodon.com/)
+The website for Cosmodon, the Astronomical Game Library.
