@@ -21,7 +21,13 @@ swig.setDefaults({ cache: !config.debug });
 // Setup express routing.
 app.use('/', express.static(__dirname + '/static'));
 app.get('/', function(req, res) {
-    res.render('home');
+    res.render('partials/home');
+});
+app.get('/documentation', function(req, res) {
+    res.render('partials/documentation/home');
+});
+app.get('/download', function(req, res) {
+    res.render('partials/download');
 });
 
 // Start express.

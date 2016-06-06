@@ -1625,13 +1625,18 @@ body > header {
   padding: 32px; }
   body > header nav {
     float: right; }
-    body > header nav div {
+    body > header nav a {
       display: inline-block;
       line-height: 23px;
       font-size: 23px;
       font-family: 'Montserrat', sans-serif;
       font-variant: small-caps;
-      margin-left: 16px; }
+      padding-left: 8px;
+      padding-right: 8px;
+      color: #000;
+      text-decoration: none; }
+      body > header nav a:hover {
+        text-decoration: underline; }
 
 section > article {
   min-width: 1024px;
@@ -1640,6 +1645,16 @@ section > article {
   font-family: 'Montserrat', sans-serif; }
   section > article h1 {
     font-size: 36px; }
+
+section > .banner {
+  background-color: #000; }
+  section > .banner .content {
+    clear: both;
+    width: 80%;
+    margin: 0 auto;
+    padding: 32px;
+    font-weight: bold;
+    color: #efefef; }
 
 section.home .banner {
   background-color: #000; }
